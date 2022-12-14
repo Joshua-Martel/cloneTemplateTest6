@@ -10,8 +10,10 @@ scalaVersion := "2.13"
 
 libraryDependencies ++= compiledDependencies(
   logback-classic,
-  pureconfig
-
+  pureconfig,
+  akka-slf4j,
+  jwt-circe
 ) ++ testDependencies(
-
+  akka-testkit,
+  scalatest
 )
